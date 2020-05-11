@@ -3,7 +3,7 @@
 
 # Summary
 
-Our strategy employs two noteworthy approaches.
+Our strategy employs two noteworthy approaches :
 
 First, we try text proccessing Without Pretrained Embeddingss. 
 
