@@ -3,7 +3,12 @@
 
 # Summary
 
-Our strategy employs two noteworthy approaches. First, we try text proccessing Without Pretrained Embeddingss. Second, we use Glove Embeddings.
+Our strategy employs two noteworthy approaches.
+
+First, we try text proccessing Without Pretrained Embeddingss. 
+
+Second, we use Glove Embeddings.
+
 We fould that Pretrained embeddings seem to give better results comapred to non-pretrained model.
 
 
@@ -40,11 +45,11 @@ This is, in part, because of the combination of sampling procedures and sanitiza
 
 Preprocessing steps :
 
-  1) Split the training dataset into train and val sample. Cross validation is a time consuming process and so let us do simple
+  - Split the training dataset into train and val sample. Cross validation is a time consuming process and so let us do simple
      train_val split   
-  2) Fill up the missing values in the text column with 'na'
-  3) Tokenize the text column and convert them to vector sequences
-  4) Pad the sequence as needed - if the number of words in the text is greater than 'max_len' trunacate them to 'max_len' or 
+  - Fill up the missing values in the text column with 'na'
+  - Tokenize the text column and convert them to vector sequences
+  - Pad the sequence as needed - if the number of words in the text is greater than 'max_len' trunacate them to 'max_len' or 
      if the number of words in the text is lesser than 'max_len' add zeros for remaining values.
 
 Modeling without Pretrained Embeddings :
